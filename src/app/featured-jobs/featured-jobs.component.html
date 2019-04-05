@@ -1,0 +1,48 @@
+<div id="featured">	
+	<div class="container">
+		<div class="row">				
+		<!-- featured-jobs start here -->
+				<div class="featured-jobs">
+					<h1>FEATURED JOBS</h1>
+					<div class="border"></div>
+					<div class="border1"></div>
+				</div>
+				<!-- featured-jobs end here -->
+				<div class="col-md-3 col-sm-3 col-xs-12" *ngFor ="let showJobs of displayJobs">
+					<div class="product-box">
+						<div class="image">
+							<a>
+								<img class="img-responsive" src="assets/images/new/01.jpg" alt="p1" title="p1"/>
+							</a>	
+							<div class="buttons">
+								<div class="open-down">
+									<button type="button" class="rotate1" routerLink="">
+										<i class="fa fa-link" aria-hidden="true"></i>
+									</button>
+									<button type="button" class="rotate1" routerLink="">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>		
+						</div>		
+
+						<div class="matter">
+							<h1>{{showJobs.job_title}}</h1>
+							<h6>{{showJobs.company_name}}</h6>
+							<ul class="list-inline">
+								<li>
+									<a><i class="fa fa-bookmark" aria-hidden="true"></i> {{showJobs.job_type}}</a>
+								</li>
+								<li>
+									<a><i class="fa fa-map-marker" aria-hidden="true"></i> {{showJobs.location}}</a>
+								</li>
+							</ul>
+							<p>{{showJobs.job_desc}}</p>
+						</div>
+						<button type="button" class="btn btn-info" onclick="location.href='list-detail-page.html'">VIEW DETAILS</button>
+						<button type="submit" class="btn btn-info" (click)=onApply(showJobs._id,showJobs.job_title)>APPLY NOW</button>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>

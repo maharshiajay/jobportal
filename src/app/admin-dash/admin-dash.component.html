@@ -1,0 +1,192 @@
+<!-- jobs start here -->
+<div id="jobs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <!-- about-content start here -->
+        <div class="jobs-content canditate">
+          <h1>Admin Dashboard</h1>
+          <ul class="list-inline">
+            <li>
+              <a routerLink="/home">Home</a>
+            </li>
+            <li>></li>
+            <li>
+              <a routerLink="/admin-dash">Admin Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      <!-- jobs-content end here -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jobs end here -->
+<!-- job start here -->
+<div id="job">
+  <div class="container">
+    <div class="row">
+      <div class="canditate-profile">
+        <ul class="nav nav-tabs list-inline">
+          <li class="active">
+            <a href="#main" data-toggle="tab" aria-expanded="true">Main Dash</a>
+          </li>
+          <li class="">
+            <a href="#companies" data-toggle="tab" aria-expanded="false">Companies</a>
+          </li>
+          <li class="">
+            <a href="#candidates" data-toggle="tab" aria-expanded="false">Candidates</a>
+          </li>
+          <li class="">
+            <a href="#comp-reg" data-toggle="tab" aria-expanded="false">Register a Company</a>
+          </li>
+          <li class="">
+              <a (click)="AppLogout()" data-toggle="tab" aria-expanded="false">LOG OUT <i class="fa fa-sign-out"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane active" id="main">
+          <div class="col-md-12">
+          </div>
+        </div>
+        <div class="tab-pane" id="companies">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="#">
+                  <img class="img-responsive" src="assets/images/new/01.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='#'">VIEW DETAILS</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+           </div>
+        </div>
+        <div class="tab-pane" id="candidates">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="#">
+                  <img class="img-responsive" src="assets/images/new/01.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='#'">VIEW DETAILS</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+           </div>
+        </div>
+        <div class="tab-pane" id="comp-reg">
+          <div class="col-sm-offset-3 col-md-6 col-sm-6  col-xs-12">
+            <form class="form-horizontal" [formGroup]="CompregForm" (ngSubmit)= onCompRegSubmit();>
+              <fieldset>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>Company Name</label>
+                    <input class="form-control" placeholder="Enter your Company Name" formControlName="company_name" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>Address</label>
+                    <input class="form-control" formControlName="address" placeholder="Enter Company Address" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>Official Email ID</label>
+                    <input class="form-control" formControlName="offical_email_id" id="input-email" placeholder="Enter Official Email ID" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>Website</label>
+                    <input class="form-control" formControlName="website" placeholder="Enter your Official Website URL" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>About Company</label>
+                    <textarea class="form-control" formControlName="About_company" cols="8" rows="5" placeholder="About your Company"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>Phone Number</label>
+                    <input  formControlName="phone_number" id="input-phone" placeholder="Type your Phone Number" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>Password</label>
+                    <input class="form-control" placeholder="Enter Password"  formControlName="password" type="password">
+                    <!-- <p *ngIf="regForm.controls['password'].hasError('required')">Enter Password</p> -->
+                  </div>
+                </div>
+                <!--
+                <div class="form-group">
+                  <div class="col-sm-6">
+                    <label>Job banner image</label>
+                    <div class="browse">
+                      <input type="file" name="file" id="file" class="inputfile" />
+                      <label for="file">Choose a file</label>
+                    </div>
+                    <span>Max file size 2MB. Allowed file format jpg, gif, png.</span>	
+                  </div>
+                </div>-->
+                <div class="button">
+                  <button type="submit" value="Submit" class="btn btn-primary btnus">REGISTER</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- job end here -->

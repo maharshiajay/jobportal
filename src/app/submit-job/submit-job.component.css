@@ -1,0 +1,166 @@
+
+/*--------------------------------- 
+[ submit-job / .submit-job-content ]
+----------------------------------- */
+#submit-job {
+	background:#f7f7f7;
+}
+#submit-job .submit-job-content{
+	position:relative;
+}
+#submit-job .submit-job-content h1{
+	margin:25px 0 35px;
+	text-align:center;
+	font-size:24px;
+	font-weight:600;
+	color:#000;
+}
+.bread{
+	text-align:center;
+}
+#submit-job .submit-job-content ul{
+	position:absolute;
+	background:#ededed;
+	right: 42.5%;
+	top: 43px;
+	margin-bottom: 0px;
+	padding: 8px 17px;
+	line-height:16px;
+}
+#submit-job .submit-job-content ul li{
+	padding-left:0px;
+	color:#666666;
+}
+#submit-job .submit-job-content ul li a{
+	font-size:14px;
+	font-weight:300;
+	color:#666666;
+}
+/*--------------------------------- 
+[ submit-job-form / .submit-form ]
+----------------------------------- */
+#submit-job-form{
+	margin:80px 0px;
+}
+#submit-job-form  .submit-form{
+	background:#f7f7f7;
+	padding: 45px 48px 59px 48px;
+	position:relative;
+}
+#submit-job-form  .submit-form .border{
+    border-top: 6px solid #ff9900;
+    position: absolute;
+    width: 100%;
+	top: 0;
+	left: 0;
+}
+#submit-job-form  .submit-form .border1{
+    border-bottom: 6px solid #ff9900;
+    position: absolute;
+    width: 100%;
+	bottom: 0;
+	right:0;
+}
+#submit-job-form  .submit-form  .form-group{
+	margin-bottom:42px;
+}
+#submit-job-form  .submit-form .form-group label{
+	color:#000;
+	font-size:16px;
+	font-weight:600;
+	margin-bottom:22px;
+}
+#submit-job-form  .submit-form .form-group .form-control{
+	border:1px solid #e6e6e6;
+	border-radius:0px;
+	height:58px;
+	color:#666;
+	font-size:16px;
+	font-weight:300;
+	width:100%
+}
+#submit-job-form  .submit-form .form-group textarea{
+	height:170px !important;
+}
+#submit-job-form  .submit-form .form-group  .btn-default {
+    color: #333;
+    background-color: transparent;
+    border-color:  transparent;
+	height:58px;
+	box-shadow:none;
+	padding: 0px 48px 0 14px;
+}
+#submit-job-form  .submit-form .form-group .btn-default span{
+	padding:16px 0 0 0;
+}
+#submit-job-form  .submit-form .form-group .form-control .fa{
+	background:#ff9900;
+	color:#fff;
+	padding:16px;
+	font-size: 24px;
+}
+#submit-job-form  .submit-form .form-group .browse{
+	background:#fff;
+	border:1px solid #e6e6e6;
+	padding: 38px 21px;
+	margin-bottom:20px;
+}
+#submit-job-form  .submit-form .browse label{
+	background:#e2e2e2;
+	color:#000;
+	border-radius:25px;
+	padding:15px 30px;
+	margin-bottom:0;
+	font-weight: 300;
+}
+#submit-job-form  .submit-form .form-group span{
+	color:#999999;
+	font-size:16px;
+	font-weight:600;
+}
+#submit-job-form  .submit-form h5{
+	font-family: 'Libre Baskerville', serif;
+	font-size:26px;
+	font-weight:bold;
+	color:#000;
+	margin:15px 0 37px; 
+}
+#submit-job-form  .submit-form .fb, #submit-job-form  .submit-form .twitter, #submit-job-form  .submit-form .google{
+	width:100%;
+}
+#submit-job-form  .submit-form .fb i, #submit-job-form  .submit-form .twitter i, #submit-job-form  .submit-form .google i{
+	width:12%;
+	height:56px;
+	color:#fff;
+	font-size:20px;
+	padding: 18px 25px;
+}
+#submit-job-form  .submit-form .fb i{
+	background:#006699;
+}
+#submit-job-form  .submit-form .twitter i{
+	background:#00ccff;
+}
+#submit-job-form  .submit-form .google i{
+	background:#cc3300;
+}
+#submit-job-form  .submit-form .fb input, #submit-job-form  .submit-form .twitter input, #submit-job-form  .submit-form .google input{
+	width:88% !important;
+	height:56px !important;
+}
+#submit-job-form  .submit-form .google input{
+	border-bottom:0;
+}
+#submit-job-form  .submit-form .button{
+	text-align:center;
+}
+#submit-job-form  .submit-form .button .btn-primary{
+	width:210px;
+	height:50px;
+	border:none;
+	border-radius:0px;
+	background:#ff9900;
+	color:#fff;
+	font-size:22.5px;
+	font-weight:bold;
+}

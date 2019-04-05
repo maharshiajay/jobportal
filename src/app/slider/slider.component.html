@@ -1,0 +1,27 @@
+<div class="slideshow">
+		<div class="item">
+			<img src="assets/images/07.jpg" alt="slider" title="slider" class="img-responsive"/>
+			<div class="slide-detail">
+				<div class="container">
+					<div class="slider-caption">
+						<div class="off"></div>
+						<h1>Search Jobs</h1>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="input-group">
+								<form class="form-horizontal" [formGroup]="regForm" (ngSubmit)= onSubmit();>
+									<input id="input-keyword" formControlName="job_keywords" class="form-control" placeholder="Search by Keywords" type="text">
+									<span>
+										<button type="submit" class="btnsrch"><i class="fa fa-search"></i></button>
+									</span>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>

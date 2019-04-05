@@ -1,0 +1,118 @@
+/*--------------------------------- 
+[ login / .login-content ]
+----------------------------------- */
+#login {
+	background:#f7f7f7;
+}
+#login .login-content{
+	position:relative;
+}
+#login .login-content h1{
+	margin:25px 0 35px;
+	text-align:center;
+	font-size:24px;
+	font-weight:600;
+	color:#000;
+}
+#login .login-content ul{
+	position:absolute;
+	background:#EDEDED;
+	right: 44.5%;
+	top: 43px;
+	margin-bottom: 0px;
+	padding: 8px 17px;
+	line-height: 16px;
+}
+#login .login-content ul li{
+	padding-left:0px;
+	color:#666666;
+}
+#login .login-content ul li a{
+	font-size:14px;
+	font-weight:300;
+	color:#666666;
+}
+/*--------------------------------- 
+[ login-form / .form ]
+----------------------------------- */
+#login-form{
+	margin:80px 0px;
+}
+#login-form  .form{
+	background:#f7f7f7;
+	padding: 45px 48px 59px 48px;
+	position: relative;
+}
+#login-form  .form .border{
+    border-top: 6px solid #ff9900;
+    position: absolute;
+    width: 100%;
+	top: 0;
+	left:0;
+}
+#login-form  .form .border1{
+    border-bottom: 6px solid #ff9900;
+    position: absolute;
+    width: 100%;
+	bottom: 0;
+	right: 0;
+}
+#login-form .form  .form-group{
+	margin-bottom:42px;
+}
+#login-form  .form .form-group label{
+	color:#000;
+	font-size:16px;
+	font-weight:600;
+	margin-bottom:22px;
+}
+#login-form  .form .form-group input{
+	border:1px solid #e6e6e6;
+	border-radius:0px;
+	height:58px;
+	color:#666;
+	font-size:16px;
+	font-weight:300;
+	width:100%
+}
+#login-form  .form .form-group a{
+	color:#ff9900;
+	font-size:16px;
+	font-weight:300;
+}
+#login-form  .form .form-group .confirmation label{
+	font-weight:300;
+	color:#666;
+	margin-bottom:0;
+}
+#login-form  .form .form-group .confirmation input{
+	color:#666;
+	font-size:16px;
+	font-weight:300;
+	width:12px;
+	height:12px;
+	margin:0 10px 0 0;
+}
+#login-form  .form .button{
+	text-align:center;
+}
+#login-form  .form .button .btn-primary{
+	width:210px;
+	height:50px;
+	border:none;
+	border-radius:0px;
+	background:#ff9900;
+	color:#fff;
+	font-size:22.5px;
+	font-weight:bold;
+}
+#login-form  .form p{
+	padding-top:36px;
+	text-align:center;
+	color:#666;
+	font-size:16px;
+	font-weight:300;
+}
+#login-form  .form p a{
+	color:#ff9900;
+}

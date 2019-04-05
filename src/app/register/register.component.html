@@ -1,0 +1,94 @@
+<!-- login start here -->
+	<div id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<!-- login-content start here -->
+					<div class="login-content">
+						<h1>Register</h1>
+						<ul class="list-inline">
+							<li>
+								<a routerLink="/home">Home</a>
+							</li>
+							<li>></li>
+							<li>
+								<a routerLink="/register">Register</a>
+							</li>
+						</ul>
+					</div>
+				<!-- login-content end here -->
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- login end here -->
+<!-- login-form start here -->
+	<div id="login-form">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-2 col-md-8 col-sm-8 col-xs-12">
+					<div class="form">
+						<div class="border"></div>
+						<div class="border1"></div>
+						<form class="form-horizontal" [formGroup]="regForm" (ngSubmit)= onSubmit();>
+							<fieldset>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Full Name</label>
+										<input class="form-control" placeholder="Enter your Full Name" minlength="4" maxlength="6" id="input-username" formControlName="fullname" type="text">
+										<!--Min Length >> {{regForm.controls['username'].hasError('minlength')}}<br>
+										Max Length >> {{regForm.controls['username'].hasError('maxlength')}}<br>
+										Required >> {{regForm.controls['username'].hasError('required')}}
+										<p *ngIf="regForm.controls['fullname'].hasError('required')">Please Enter Your Full Name</p>
+										<p *ngIf="regForm.controls['fullname'].hasError('minlength')">Enter atleast 4 characters</p>
+										<p *ngIf="regForm.controls['fullname'].hasError('maxlength')">Max 6 characters allowed</p>-->
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Username</label>
+										<input class="form-control" formControlName="username" id="input-username" placeholder="Enter Username" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>DOB</label>
+										<input class="form-control" formControlName="dob" id="input-dob" placeholder="Enter your DOB" type="date">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Email</label>
+										<input class="form-control" formControlName="mail_id" id="input-email" placeholder="Type your email address" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Address</label>
+										<input class="form-control" formControlName="address" id="input-address" placeholder="Type your address" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Phone Number</label>
+										<input class="form-control" formControlName="phone_number" id="input-phone" placeholder="Type your Phone Number" type="text">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Password</label>
+										<input class="form-control" placeholder="Enter Password"  formControlName="password" type="password">
+										<p *ngIf="regForm.controls['password'].hasError('required')">Enter Password</p>
+									</div>
+								</div>
+								<div class="button">
+									<button type="submit" value="Submit" class="btn btn-primary btnus">REGISTER</button>
+								</div>
+								<p>Already have an account? <a routerLink="/login">Login</a></p>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

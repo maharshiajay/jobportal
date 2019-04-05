@@ -1,0 +1,72 @@
+<!-- Employer Profile Header start here -->
+<div id="jobs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <!-- about-content start here -->
+                <div class="jobs-content canditate">
+                    <h1>Company Dashboard</h1>
+                    <ul class="list-inline">
+                        <li>
+                            <a routerLink="/home">Home</a>
+                        </li>
+                        <li>></li>
+                        <li>
+                            <a routerLink="/emp-profile">Company Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- jobs-content end here -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Employer Profile Header end here -->
+
+<!-- Employer Profile start here -->
+<div id="job">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="graphic">
+                    <h1>GRAPHICRIVER</h1>
+                    <h5>CONTRARY TO POPULAR BELIEF</h5>
+                    <p>Aliquam hendrit rutrum iaculis nullam ondimentum maluada velit beum donec sit amet tristique
+                        erosam amet risus mollis malesuada quis quis nulla. Vestibulum ante ipsum primis in faucibus
+                        orci luctus et ultrices posuere cubilia Curae
+                        mattis nisi vel elit porttitor euismod pharetra sem interdum.</p>
+                    <span style="padding: 10px"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        140/11,Delhi,India</span>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12 padd0">
+                <div class="col-md-12">
+                    <div class="col-md-9">
+                        <div class="employe-logo">
+                            <img src="assets/images/image01.jpg" alt="logo" title="logo" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="border: 1px solid #eee; padding: 15px;">
+                        <h4>Do you have Openings in your Company?</h4>
+                        <a routerLink="/submit-job" class="btn btn-info">Post Requirements Here</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="employe-vacancy">
+                        <p>Your Posted Jobs</p>
+                    </div>
+                </div>
+                <app-dis-posted-jobs></app-dis-posted-jobs>
+                <!-- <div class="col-md-12">
+                <table border="1px">
+                  <tr *ngFor="let applicants of candidates">
+                   <td>{{ applicants.empName }}</td>
+                   <td>{{ applicants.empID }}</td>
+                  </tr>
+                  </table>
+            </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Employer Profile end here -->

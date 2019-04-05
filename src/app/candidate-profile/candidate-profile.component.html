@@ -1,0 +1,1042 @@
+<!-- jobs start here -->
+<div id="jobs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <!-- about-content start here -->
+        <div class="jobs-content canditate">
+          <h1>MY PROFILE</h1>
+          <ul class="list-inline">
+            <li>
+              <a routerLink="/home">Home</a>
+            </li>
+            <li>></li>
+            <li>
+              <a routerLink="/candidate-profile">Candidates</a>
+            </li>
+          </ul>
+        </div>
+      <!-- jobs-content end here -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jobs end here -->
+<!-- job start here -->
+<div id="job">
+  <div class="container">
+    <div class="row">
+      <div class="canditate-profile">
+        <ul class="nav nav-tabs list-inline">
+          <li class="active">
+            <a href="#profile" data-toggle="tab" aria-expanded="true">PROFILE</a>
+          </li>
+          <li class="">
+            <a href="#applied" data-toggle="tab" aria-expanded="false">APPLIED JOBS</a>
+          </li>
+          <li class="">
+            <a href="#post" data-toggle="tab" aria-expanded="false">POST JOBS</a>
+          </li>
+          <li class="">
+            <a href="#password" data-toggle="tab" aria-expanded="false">CHANGE PASSWORD</a>
+          </li>
+          <li class="">
+              <a (click)="AppLogout()" data-toggle="tab" aria-expanded="false">LOG OUT <i class="fa fa-sign-out"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div *ngFor ="let showProfile of displayCandDetails" class="tab-pane active" id="profile">
+          <div class="col-md-12">
+          <form class="form-horizontal candidate-single" method="post">
+          <fieldset>
+            <div class="form-group">
+              <div class="col-sm-4">
+                <img src="assets/images/my_profile.jpg" alt="my_profile" title="my_profile" class="img-responsive">
+              </div>
+              <div class="col-sm-8">
+                <div class="matter">
+                  <label>FULL NAME 
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>{{showProfile.fullname}}</span>
+                </div>	
+                <div class="matter">
+                  <label>USERNAME
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>{{showProfile.username}}</span>
+                </div>	
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>DATE OF BIRTH
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>{{showProfile.dob}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>ADDRESS
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>{{showProfile.address}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>EMAIL ID
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>{{showProfile.mail_id}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>MOBILE NUMBER
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>{{showProfile.phone_number}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>HOME PHONE
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>0161 1234567	</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>PROFESSIONAL SKILLS
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>Adobe Photoshop, Corel Draw, Adobe Illustrator, PHP, Wordpress</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>EXPERIENCE
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>5 years experience in sit amet, pulvinar augue, Sed porttitor purus ac arcu scelerisque. </span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>EDUCATION
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>-----</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <div class="matter">
+                  <label>MY ADDITIONALS INFORMATION
+                  <button type="submit" value="Submit" class="icon" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                  </label>
+                  <span>INTEREST : </span>
+                  <span>CAREER : </span>
+                  <span>ACHIVEMENTS : </span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+          </div>
+        </div>
+        <div class="tab-pane" id="applied">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/01.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='#'">VIEW DETAILS</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/02.jpg" alt="p2" title="p2"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/03.jpg" alt="p3" title="p3"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/04.jpg" alt="p4" title="p4"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/05.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/06.jpg" alt="p2" title="p2"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/07.jpg" alt="p3" title="p3"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/08.jpg" alt="p4" title="p4"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/09.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/10.jpg" alt="p2" title="p2"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/11.jpg" alt="p3" title="p3"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/12.jpg" alt="p4" title="p4"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+              <button type="button" class="btn btn-info" onclick="location.href='apply-job-form.html'">APPLY NOW</button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous"><span aria-hidden="true" class="fa fa-angle-left"></span></a>
+              </li>
+              <li class="active">
+                <a href="#"> 1</a> 
+              </li>
+              <li>
+                <a href="#"> 2</a> 
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#"> 4</a> 
+              </li>
+              <li>
+                <a href="#"> 5</a> 
+              </li>
+              <li>
+                <a href="#" aria-label="Next"><span aria-hidden="true" class="fa fa-angle-right"></span></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Next"><span aria-hidden="true" class="fa fa-angle-double-right"></span></a>
+              </li>
+            </ul>
+          </div>	
+        </div>
+        <div class="tab-pane" id="post">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/13.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/14.jpg" alt="p2" title="p2"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/15.jpg" alt="p3" title="p3"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/16.jpg" alt="p4" title="p4"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/17.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/18.jpg" alt="p2" title="p2"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/19.jpg" alt="p3" title="p3"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/20.jpg" alt="p4" title="p4"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/21.jpg" alt="p1" title="p1"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/22.jpg" alt="p2" title="p2"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/23.jpg" alt="p3" title="p3"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="product-box profile">
+              <div class="image">
+                <a href="jobs.html">
+                  <img class="img-responsive" src="assets/images/new/24.jpg" alt="p4" title="p4"/>
+                </a>	
+                <div class="buttons">
+                  <div class="open-down">
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="rotate1">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>		
+              </div>		
+              <div class="matter">
+                <h1>IT Department Manager</h1>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i> Full Time</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Chandigarh</a>
+                  </li>
+                </ul>
+                <p>There are many variations of passages of lorem Ipsum available [...]</p>
+              </div>
+              <button type="button" class="btn btn-info" onclick="location.href='jobs.html'">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align:center">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous"><span aria-hidden="true" class="fa fa-angle-left"></span></a>
+              </li>
+              <li class="active">
+                <a href="#"> 1</a> 
+              </li>
+              <li>
+                <a href="#"> 2</a> 
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#"> 4</a> 
+              </li>
+              <li>
+                <a href="#"> 5</a> 
+              </li>
+              <li>
+                <a href="#" aria-label="Next"><span aria-hidden="true" class="fa fa-angle-right"></span></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Next"><span aria-hidden="true" class="fa fa-angle-double-right"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-pane" id="password">
+          <div class="col-sm-offset-3 col-md-6 col-sm-6  col-xs-12">
+            <form class="form-horizontal password" method=	"post">
+              <fieldset>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>OLD PASSWORD</label>
+                    <input class="form-control" id="old-password" value="" name="old-password" required="" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>ENTER NEW PASSWORD</label>
+                    <input class="form-control" id="new-password" value="" name="new-password" required="" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <label>CONFIRM PASSWORD
+                    </label>
+                    <input class="form-control" id="confirm-password" value="" name="confirm-password" required="" type="text">
+                  </div>
+                </div>
+                <div class="button">
+                  <button type="submit" value="Submit" class="btn btn-primary btnus">SAVE</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- job end here -->

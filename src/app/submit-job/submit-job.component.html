@@ -1,0 +1,150 @@
+
+<!-- submit-job start here -->
+<div id="submit-job">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <!-- submit-job-content start here -->
+        <div class="submit-job-content">
+          <h1>Submit a job</h1>
+          <ul class="list-inline">
+            <li>
+              <a routerLink="/home">Home</a>
+            </li>
+            <li>></li>
+            <li>
+              <a routerLink="/submit-job">Submit a job</a>
+            </li>
+          </ul>
+        </div>
+      <!-- submit-job-content end here -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- submit-job end here -->
+<!-- submit-job-form start here -->
+<div id="submit-job-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <!-- submit-form start here -->
+        <div class="submit-form">
+          <div class="border"></div>
+          <div class="border1"></div>
+          <form class="form-horizontal" [formGroup]="regForm" (ngSubmit)= onSubmit();>
+            <fieldset>
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label>Email ID</label>
+                  <input class="form-control" formControlName="email_id" id="input-email" placeholder="Enter email ID" required="" type="text">
+                </div>
+                <div class="col-sm-6">
+                  <label>Job Title</label>
+                  <input class="form-control" formControlName="job_title" placeholder="Your Job Title" id="input-jobtitle" required="" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label>Location</label>
+                  <input class="form-control" formControlName="location" id="input-location" placeholder="e.g. Bangalore *" required="" type="text">
+                </div>
+                <div class="col-sm-6">
+                  <label>Job Type</label>
+                  <select class="form-control" formControlName="job_type">
+                    <option value="">--Select--</option>
+                    <option value="Full-Time">Full Time</option>
+                    <option value="Part-Time">Part Time</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label>Company Name</label>
+                  <input class="form-control" formControlName="company_name" id="input-company-name" placeholder="Company Name *" required="" type="text">
+                </div>
+                <div class="col-sm-6">
+                  <label>Experience</label>
+                  <input class="form-control" formControlName="experiance" placeholder="Job Experience required *" id="input-experience" required="" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label>Job Keywords</label>
+                  <input class="form-control" formControlName="job_keywords" id="input-job" placeholder="e.g. PHP, Web designer, Manager *" required="" type="text">
+                </div>
+                <div class="col-sm-6">
+                  <label>Salary</label>
+                  <input class="form-control" formControlName="salary_package" placeholder=" e.g. Rs.4L-6L P.A *" id="input-salary" required="" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label>Job Description</label>
+                  <textarea class="form-control" formControlName="job_desc" id="input-enquiry" rows="10" placeholder="Job Description *" required=""></textarea>
+                </div>
+                <!--<div class="col-sm-6">
+                  <label>Job banner image</label>
+                  <div class="browse">
+                    <input type="file" name="file" id="file" class="inputfile" />
+                    <label for="file">Choose a file</label>
+                  </div>
+                  <span>Max file size 2MB. Allowed file format jpg, gif, png.</span>	
+                </div>-->
+              </div>
+              
+                <!--
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>Application Email/URL</label>
+                  <input class="form-control" id="input-url" placeholder="Enter an email address or website URL *" value="" name="email" required="" type="text">
+                </div>
+              </div>
+              <h5>Compnay Details</h5>
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label>Company name</label>
+                  <input class="form-control" placeholder=" Enter the company name *" id="input-company" value="" name="company name" required="" type="text">
+                </div>
+                <div class="col-sm-4">
+                  <label>Website(optional)</label>
+                  <input class="form-control" placeholder=" http:// *" id="input-website" value="" name="website" required="" type="text">
+                </div>
+                <div class="col-sm-4">
+                  <label>Tagline (optional)</label>
+                  <input class="form-control" placeholder="Briefly describe your company *" id="input-tagline" value="" name="tagline" required="" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label>Description</label>
+                  <textarea class="form-control" id="input-desc" rows="10" name="enquiry" placeholder="Your message *" required=""></textarea>
+                </div>
+                <div class="col-sm-6">
+                  <label>Social Profiles (optional)</label>
+                  <div class="fb">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <input class="form-control pull-right" placeholder="Enter page URL *" id="input-tagline1" value="" name="tagline" required="" type="text">
+                  </div>	
+                  <div class="twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <input class="form-control pull-right" placeholder="@ yourcompany *" id="input-tagline2" value="" name="tagline" required="" type="text">
+                  </div>	
+                  <div class="google">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <input class="form-control pull-right" placeholder="Enter page URL *" id="input-tagline3" value="" name="tagline" required="" type="text">
+                  </div>	
+                </div>
+              </div>-->
+              <div class="button">
+                <button type="submit" value="Submit" class="btn btn-primary btnus">SUBMIT A JOB</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <!-- submit-form end here -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- submit-job-form end here -->

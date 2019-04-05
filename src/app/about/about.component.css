@@ -1,0 +1,148 @@
+
+/*--------------------------------- 
+[ about / .about-content ]
+----------------------------------- */
+#about {
+	background:#f7f7f7;
+}
+#about .about-content{
+	position:relative;
+}
+#about .about-content h1{
+	margin:25px 0 35px;
+	text-align:center;
+	font-size:24px;
+	font-weight:600;
+	color:#000;
+}
+#about .about-content ul{
+	position:absolute;
+	background:#EDEDED;
+	right: 43.5%;
+	top: 43px;
+	margin-bottom: 0px;
+	padding: 8px 17px;
+	line-height:16px;
+}
+#about .about-content ul li{
+	padding-left:0px;
+	color:#666666;
+}
+#about .about-content ul li a{
+	font-size:14px;
+	font-weight:300;
+	color:#666666;
+}
+/*--------------------------------- 
+[ abouts / .about-detail ]
+----------------------------------- */
+#abouts{
+	margin:80px 0px;
+}
+#abouts  .about-detail h1{
+	color:#000;
+	font-size:24px;
+	font-weight:600;
+	text-align:center;
+	margin:0 0 30px;
+}
+#abouts  .about-detail p{
+	color:#666;
+	font-size:16px;
+	font-weight:400;
+	text-align:center;
+	line-height:28px;
+	margin-bottom:0;
+}
+#abouts  .inner{
+	margin-top:37px;
+}
+#abouts  .inner p{
+	color:#666;
+	font-size:16px;
+	font-weight:400;
+	text-align:left;
+	line-height:28px;
+	margin-bottom:0;
+}
+#abouts  .mission h1{
+	color:#000;
+	font-size:24px;
+	font-weight:600;
+	text-align:center;
+	margin:72px 0 30px;
+}
+#abouts  .mission p{
+	color:#666;
+	font-size:16px;
+	font-weight:400;
+	text-align:center;
+	line-height:28px;
+	padding:0 74px;
+	margin-bottom:0;
+}
+#abouts  .team h1{
+	color:#000;
+	font-size:24px;
+	font-weight:600;
+	text-align:center;
+	margin:50px 0 79px;
+}
+#abouts .team ul{
+	padding:0 13px;
+	margin-bottom:0px;
+}
+#abouts .team ul li{
+	padding:0;
+	margin-right:35px;
+}
+#abouts .team ul li:last-child{
+	margin-right:0px;
+}
+#abouts .team .client{
+	text-align:center;
+}
+#abouts .team .client img{
+	margin:0 auto;
+}
+#abouts .team .client h5{
+	margin:15px 0 10px;
+	font-family: 'Libre Baskerville', serif;
+	font-size:16px;
+	font-weight:400;
+	color:#333;
+}
+#abouts .team .client p{
+	color:#666;
+	font-size:16px;
+	font-weight:400;
+	margin:0 0 14px;
+}
+#abouts .team .client .soical{
+	padding:0;
+	margin:0;
+}
+#abouts .team .client .soical li{
+	background:#fff;
+	border:1px solid #f0f0f0;
+	border-radius:50%;
+	width:29px;
+	height:29px;
+	padding:3px 6px;
+	margin-right:8px !important;
+}
+#abouts .team .client .soical li:last-child{
+	margin-right:0px !important;
+}
+#abouts .team .client .soical li a{
+	color:#000;
+	font-size:13px;
+	font-weight:400;
+}
+#abouts .team .client .soical li:hover{
+	background:#ff9900;
+	border:1px solid transparent;
+}
+#abouts .team .client .soical li:hover a{
+	color:#fff;
+}

@@ -1,0 +1,91 @@
+/*--------------------------------- 
+[ testimonial / .testimonial-jobs ]
+----------------------------------- */
+#testimonial{
+	background:url(../../assets/images/testi-bg.jpg);
+	height:402px;
+}
+#testimonial .testimonial-jobs{
+	text-align:center;
+	margin:0 0 52px 0;
+	position:relative;
+}
+#testimonial .testimonial-jobs h1{
+	margin:57px 0 0 0 ;
+	padding-bottom:7px;
+	font-family: 'Libre Baskerville', serif;
+	font-size:24px;
+	font-weight:bold;
+	color:#ff9900;
+}
+.testimonial-jobs .border{
+    border-bottom: 1px solid #ff9900;
+    left: 40%;
+    position: absolute;
+    width: 12%;
+}
+.testimonial-jobs .border1{
+    border-bottom: 1px solid #ff9900;
+    right: 40%;
+    margin-top:10px;
+    position: absolute;
+    width: 12%;
+}
+#testimonials{
+	margin-bottom:0px;
+	background:none;
+}
+#testimonials .owl-wrapper-outer{
+	border:none;
+}
+#testimonials  .owl-buttons div {
+    opacity: 1 !important;
+   text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+   color:#fff;
+}
+#testimonials .owl-buttons div:hover{
+	color:#ff9900;
+}
+#testimonials  .owl-buttons .owl-prev {
+    left: 15px;
+	top:20%;
+}
+#testimonials .owl-buttons .owl-next {
+    right: 15px;
+	top:20%;
+}
+#testimonials .owl-buttons div i {
+    font-size: 55px;
+    margin: -20px 0 0;
+}
+.photo{
+	padding:0 42px;
+}
+.photo img{
+	margin:0 auto;
+	margin-bottom:22px;
+	width:99px;
+	height:99px;
+	border:4px solid #ffb413;
+	border-radius:50%;
+	border-top-width:0px;
+	border-left-width:3px;
+	border-right-width:3px;
+}
+.photo i {
+    color: #999999;
+    font-size: 24px;
+    position: absolute;
+    left:48px;
+}
+.photo span {
+    float: right;
+    color: #999999;
+    font-size: 24px;
+	margin-top: -28px;
+}
+.photo p{
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+}

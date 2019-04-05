@@ -1,0 +1,98 @@
+<!-- login start here -->
+<div id="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <!-- login-content start here -->
+        <div class="login-content">
+          <h1>Company Registration</h1>
+          <ul class="list-inline">
+            <li>
+              <a routerLink="/home">Home</a>
+            </li>
+            <li>></li>
+            <li>
+              <a routerLink="/company-register">Company Registration</a>
+            </li>
+          </ul>
+        </div>
+      <!-- login-content end here -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- login end here -->
+<!-- login-form start here -->
+<div id="login-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-2 col-md-8 col-sm-8 col-xs-12">
+        <div class="form">
+          <div class="border"></div>
+          <div class="border1"></div>
+          <form class="form-horizontal" [formGroup]="CompregForm" (ngSubmit)= onCompRegSubmit();>
+            <fieldset>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>Company Name</label>
+                  <input class="form-control" placeholder="Enter your Company Name" formControlName="company_name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>Address</label>
+                  <input class="form-control" formControlName="address" placeholder="Enter Company Address" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>Official Email ID</label>
+                  <input class="form-control" formControlName="offical_email_id" id="input-email" placeholder="Enter Official Email ID" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>Website</label>
+                  <input class="form-control" formControlName="website" placeholder="Enter your Official Website URL" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>About Company</label>
+                  <textarea class="form-control" formControlName="About_company" cols="8" rows="5" placeholder="About your Company"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>Phone Number</label>
+                  <input  formControlName="phone_number" id="input-phone" placeholder="Type your Phone Number" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <label>Password</label>
+                  <input class="form-control" placeholder="Enter Password"  formControlName="password" type="password">
+                  <!-- <p *ngIf="regForm.controls['password'].hasError('required')">Enter Password</p> -->
+                </div>
+              </div>
+              <!--
+              <div class="form-group">
+                <div class="col-sm-6">
+                  <label>Job banner image</label>
+                  <div class="browse">
+                    <input type="file" name="file" id="file" class="inputfile" />
+                    <label for="file">Choose a file</label>
+                  </div>
+                  <span>Max file size 2MB. Allowed file format jpg, gif, png.</span>	
+                </div>
+              </div>-->
+              <div class="button">
+                <button type="submit" value="Submit" class="btn btn-primary btnus">REGISTER</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

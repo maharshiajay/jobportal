@@ -1,0 +1,86 @@
+
+/*--------------------------------- 
+[ browse / .browse-jobs ]
+----------------------------------- */
+.browse{
+	padding:80px 0 50px 0; 
+}
+.browse .browse-jobs{
+	text-align:center;
+	margin:0 0 48px 0;
+	position:relative;
+}
+.browse .browse-jobs h1{
+	margin:0;
+	padding-bottom:7px;
+	font-family: 'Libre Baskerville', serif;
+	font-size:24px;
+	font-weight:bold;
+	color:#000;
+}
+.browse-jobs .border{
+    border-bottom: 1px solid #333333;
+    left: 40%;
+    position: absolute;
+    width: 12%;
+}
+.browse-jobs .border1{
+    border-bottom: 1px solid #333333;
+    right: 40%;
+    margin-top:10px;
+    position: absolute;
+	width: 12%;
+}
+.browse .matter{
+	border:1px solid #e5e5e5;
+	min-height:116px;
+	text-align:center;
+	margin-bottom:30px;
+}
+.browse .matter .boxbor i{
+	padding-top:25px;
+}
+.browse .matter:hover .boxbor:before {
+    display: block;
+    content: "";
+    width: 185px;
+    height: 80px;
+    bottom:auto;
+    left: 15px;
+	position:absolute;
+    border-top: 3px solid #c87500;
+    border-left: 3px solid #c87500;
+}
+.browse .matter:hover .boxbor:after {
+    display: block;
+    content: "";
+    width: 185px;
+    height: 80px;
+    bottom: 30px;
+    right: 15px;
+    border-bottom: 3px solid #c87500;
+    border-right: 3px solid #c87500;
+	position:absolute;
+}
+.browse .matter a{
+	text-align:center;
+}
+.browse .matter a i{
+	color:#000;
+	font-size:32px;
+	font-weight:400;
+	margin-bottom:12px;
+	display:block;
+}
+.browse .matter a span{
+	font-size:20px;
+	font-weight:400;
+	color:#000;
+}
+.browse .matter:hover{
+	background:#FFB413;
+	border:1px solid transparent;
+}
+.browse .matter:hover a i, .browse .matter:hover a span{
+	color:#fff;
+}

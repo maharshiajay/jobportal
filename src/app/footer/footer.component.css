@@ -1,0 +1,163 @@
+/*--------------------------------- 
+[ Footer / #footer]
+----------------------------------- */
+footer {
+	background-color: #1b191a;
+	padding:65px 0 ;
+}
+footer h5 {
+	font-family: 'Libre Baskerville', serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#ff9900;
+	margin:0 0 26px;
+}
+footer h6 {
+	font-size:14px;
+	color:#fff;
+	margin:0 0 26px;
+	font-weight:400;
+}
+footer h6 i{
+	font-size:24px !important;
+	margin-right:9px;
+}
+footer h6 span{
+	font-weight:600;
+	font-size:24px;
+}
+footer p {
+	font-size:14px;
+	font-weight:300;
+	color: #ffffff;
+	line-height:26px;
+	width: 88%;
+    margin:12px 0 22px;
+}
+footer .bor{
+	border-bottom:1px solid #313538;
+	margin-bottom: 34px;
+	padding-bottom:20px;
+}
+.subscribe{
+	padding:0 70px 0 0;
+}
+.subscribe input{
+	height: 40px;
+	border-radius:0px;
+	border:none;
+}
+.subscribe .btn-default{
+	background:#ff9900;
+	color:#fff;
+	border:none;
+	border-radius:0px;
+	padding:7px 16px;
+	height:40px;
+} 
+.socialicon{
+	margin-top:32px;
+	margin-left:0;
+}
+.socialicon li:last-child{
+	margin-right:0px;
+}
+.socialicon li {
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	margin-right:25px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 5px;
+	border:1px solid #ff9900;
+}
+.socialicon li a{
+	font-size:14px;
+	color:#fff;
+}
+.socialicon li a i{
+	margin-right:0px;
+}
+.socialicon li:hover{
+	background:#ff9900;
+	border:1px solid transparent;
+}
+footer .info ul, footer .use ul{
+	margin-bottom:0px;
+}
+footer .info li, footer .use li{
+	padding:0 0 26px;
+	line-height: 16px;
+}
+footer .info li:last-child, footer .use li:last-child{
+	padding:0px;
+}
+footer .info li a, footer .use li a {
+	font-size:16px;
+	font-weight:400;
+	color:#fff;
+}
+footer .info li a i, footer .use li a i{
+	margin-right:7px;
+}
+footer .info li a:hover, footer .use li a:hover{
+	color:#ff9900;
+}
+footer .matter{
+	margin-right:38px;
+}
+footer .info{
+	width: 15%;
+	margin-right: 78px;
+}
+footer .use{
+	width: 15%;
+	margin-right: 101px;
+}
+footer .form .input-group{
+	padding:0 15px;
+}
+footer .form .big{
+	height:80px !important;
+}
+footer .form .form-group{
+	margin-bottom:12px;
+}
+footer .form input{
+	background:#161b1e;
+	border:1px solid #666666;
+	height:40px;
+	border-radius:0;
+	box-shadow: none !important;
+	outline-offset: 0 !important;
+}
+footer .form input:hover{
+	border:1px solid #fff;
+}
+footer .form .btn-default {
+    background: #ff9900;
+    color: #000;
+    border: none;
+    border-radius: 0px;
+    padding: 11px 16px;
+    height: 80px;
+}
+footer .form .btn-default:hover, footer .form .btn-default:active:hover {
+    background: #ff9900 !important;
+	color:#000 !important;
+}
+.powered {
+	background:#1b191a;
+	padding: 0px 0 65px;
+	text-align:center;
+}
+.powered p{
+	font-size:14px;
+	font-weight:400;
+	margin:0px;
+	color:#cccccc;
+	line-height: 13px;
+}

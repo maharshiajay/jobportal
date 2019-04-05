@@ -1,0 +1,49 @@
+
+                <div class="col-md-4 col-sm-4 col-xs-12" *ngFor="let postedJobs of AllPostedJobs">
+                    <div class="product-box">
+                        <div class="image">
+                            <a href="#">
+                                <img class="img-responsive" src="assets/images/new/01.jpg" alt="p2" title="p2" />
+                            </a>
+                            <div class="buttons">
+                                <div class="open-down">
+                                    <button type="button" class="rotate1">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="rotate1">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="matter">
+                            <h1>{{postedJobs.job_title}}</h1>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i>
+                                        {{postedJobs.job_type}}</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        {{postedJobs.location}}</a>
+                                </li>
+                            </ul>
+                            <p>{{postedJobs.job_desc}}</p>
+                            <p>{{ postedJobs.AppliedStudentDetails[0].empName }}</p>
+                            <!-- <p *ngFor = "let i of postedJobs.AppliedStudentDetails[0]">
+                                {{ i.empName }}
+                            </p> -->
+                        </div>
+                        <button type="button" class="btn btn-info" onclick="location.href='#'">VIEW DETAILS</button>
+                        <button type="button" class="btn btn-info" (click)="viewApplicantDetails()">APPLICANTS</button>
+                    </div>
+                </div>
+                <!-- <div class="col-md-12">
+                    <table border="1px">
+                      <tr *ngFor="let applicants of allApplicants">
+                       <td>{{ applicants.empName }}</td>
+                       <td>{{ applicants.empID }}</td>
+                      </tr>
+                      </table>
+                </div> -->
+                <!-- <p>{{ allApplicants.empName }}</p> -->

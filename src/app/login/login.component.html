@@ -1,0 +1,71 @@
+<!-- login start here -->
+	<div id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<!-- login-content start here -->
+					<div class="login-content">
+						<h1>Login</h1>
+						<ul class="list-inline">
+							<li>
+								<a routerLink="/home">Home</a>
+							</li>
+							<li>></li>
+							<li>
+								<a routerLink="/login">Login</a>
+							</li>
+						</ul>
+					</div>
+				<!-- login-content end here -->
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- login end here -->
+<!-- login-form start here -->
+	<div id="login-form">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-2 col-md-8 col-sm-8  col-xs-12">
+					<div class="form">
+						<div class="border"></div>
+						<div class="border1"></div>
+						<form class="form-horizontal" (submit)="myLogin(myFormValuesFromUserInput)" #myFormValuesFromUserInput="ngForm">
+							<fieldset>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Email ID</label>
+										<input class="form-control" ngModel minlength="3" name="mail_id" id="input-email" placeholder="Enter your Email ID" type="text" #title="ngModel">
+										<!--Invalid >> {{title.invalid}}<br>
+										Valid >> {{title.valid}}<br>
+										Dirty >> {{title.dirty}}<br>
+										Touched >> {{title.touched}}-->
+										<p *ngIf="title.invalid && (title.dirty || title.touched)">Please enter a valid Email ID</p>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<label>Password</label>
+										<input class="form-control" name="password" ngModel id="input-password" placeholder="Enter your password" name="password" required="" type="password">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12 confirmation">
+										<label>
+											<input name="confirmation" value="yes" type="checkbox">Remember me
+										</label>
+										<a href="#" class="colorLink subHeadingText icon-wrap pull-right">Forgot password?</a>
+									</div>
+								</div>
+								<div class="button">
+									<button type="submit" value="Submit" class="btn btn-primary btnus">LOGIN</button>
+								</div>
+								<p>Don't have an account? <a routerLink="/register">Register</a></p>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- login-form  end here -->

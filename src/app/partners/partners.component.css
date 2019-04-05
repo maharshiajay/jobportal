@@ -1,0 +1,65 @@
+/*--------------------------------- 
+[ partner / .our-partner ]
+----------------------------------- */
+#partner{
+	padding:80px 0;
+}
+#partner .our-partner{
+	text-align:center;
+	margin:0 0 59px 0;
+	position:relative;
+}
+#partner .our-partner h1{
+	padding-bottom:7px;
+	font-family: 'Libre Baskerville', serif;
+	font-size:24px;
+	font-weight:bold;
+	color:#000;
+	margin:0;
+}
+.our-partner .border{
+    border-bottom: 1px solid #333333;
+    left: 40%;
+    position: absolute;
+    width: 147px;
+}
+.our-partner .border1{
+    border-bottom: 1px solid #333333;
+    right: 40%;
+    margin-top:10px;
+    position: absolute;
+    width: 147px;
+}
+#partners img{
+	margin:0 auto;
+}
+#partners .image{
+	margin: 0 auto;
+}
+#partners .owl-wrapper-outer{
+	border:none;
+	box-shadow:none;
+}
+#partners .owl-buttons div{
+    opacity: 1 !important;
+   text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+}
+#partners .owl-buttons div i:hover{
+	color:#5b5b5b;
+	border:1px solid #5b5b5b;
+}
+#partners .owl-buttons .owl-prev {
+    left: 8px;
+	top:40%;
+}
+#partners .owl-buttons .owl-next{
+    right: 8px;
+	top:40%;
+}
+#partners .owl-buttons div i {
+    font-size: 17px;
+	color:#cccccc;
+    margin: -20px 0 0;
+	border:1px solid #cccccc;
+	padding:10px;
+}
